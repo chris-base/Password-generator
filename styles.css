@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#headerText {
+  margin-top: 50px;
+}
+
+#appContainer {
+  width: 600px;
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#passwordTextContainer {
+  width: 100%;
+  background-color: #969696;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#passwordText:empty::before {
+  color: grey;
+}
+
+#passwordText[data-placeholder]:not([data-placeholder=""]):empty::before {
+  content: attr(data-placeholder);
+}
+
+#passwordText:empty::before {
+  content: "fallback placeholder";
+}
+
+#passwordText {
+  cursor: text;
+  width: 90%;
+  height: 100%;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+  background-color: blueviolet;
+  padding: 5px 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#passwordSettingsContainer {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
