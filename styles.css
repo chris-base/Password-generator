@@ -20,7 +20,6 @@ body {
 
 #appContainer {
   width: 600px;
-  background-color: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +31,7 @@ body {
 
 #passwordTextContainer {
   width: 100%;
-  background-color: #969696;
+  background-color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,13 +59,25 @@ body {
   font-size: 40px;
   margin: 0;
   color: white;
-  background-color: blueviolet;
-  padding: 5px 20px;
+  padding: 10px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+#passwordCopyImg {
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("public/contentImg.svg");
+  -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(37%) saturate(7321%) hue-rotate(162deg) brightness(104%) contrast(101%);
+          filter: brightness(0) saturate(100%) invert(99%) sepia(37%) saturate(7321%) hue-rotate(162deg) brightness(104%) contrast(101%);
+}
+
 #passwordSettingsContainer {
   margin-top: 20px;
+  background-color: #333333;
 }
 /*# sourceMappingURL=styles.css.map */
