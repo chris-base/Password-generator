@@ -31,6 +31,7 @@ body {
 
 #passwordTextContainer {
   width: 100%;
+  padding-right: 25px;
   background-color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +39,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #passwordText:empty::before {
@@ -53,19 +60,18 @@ body {
 }
 
 #passwordText {
-  cursor: text;
-  width: 90%;
+  cursor: copy;
   height: 100%;
   font-size: 40px;
   margin: 0;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 0 15px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 #passwordCopyImg {
-  margin: 0 auto;
+  cursor: pointer;
   width: 35px;
   height: 35px;
   background-size: 35px;
@@ -78,6 +84,34 @@ body {
 
 #passwordSettingsContainer {
   margin-top: 20px;
+  border-radius: 3px;
   background-color: #333333;
+  font-size: 28px;
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#passwordLengthContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#passwordLengthTitleText {
+  color: white;
+  margin: 0;
+}
+
+#passwordLengthText {
+  color: #96f8ff;
+  font-size: 40px;
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
