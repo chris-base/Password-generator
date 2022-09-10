@@ -45,6 +45,10 @@ body {
 
 #passwordText {
   cursor: copy;
+  max-width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   height: 100%;
   font-size: 40px;
   margin: 0;
@@ -101,4 +105,25 @@ body {
 #lengthSlider {
   width: 100%;
   margin: 0;
+}
+
+#passwordSettingsCheckBoxes {
+}
+
+.checkBoxContainer {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.checkBox {
+  width: 25px;
+  height: 25px;
+  margin: 15px 15px 15px 0;
+}
+
+.checkBoxText {
+  margin: 0;
+  color: white;
+  font-weight: 600;
 }
