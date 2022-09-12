@@ -17,6 +17,7 @@ body {
 
 #headerText {
   margin-top: 50px;
+  color: #c9c9c9;
 }
 
 #appContainer {
@@ -146,5 +147,52 @@ body {
   margin: 0;
   color: white;
   font-weight: 600;
+}
+
+#passwordStrengthContainer {
+  background-color: #15171f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7px 25px;
+  margin: 15px 0;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#strengthMainText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #a3a3a3;
+  text-transform: uppercase;
+}
+
+#strengthScaleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#strengthNodesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.strengthNode {
+  border: 3px solid white;
+  width: 7px;
+  height: 35px;
+  margin: 0 7px;
 }
 /*# sourceMappingURL=styles.css.map */
