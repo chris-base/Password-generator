@@ -5,12 +5,11 @@ let sliderChanged = () => {
 };
 
 let lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
-
 let uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 let numbers = "1234567890";
-
-let symbols = "~`! @#$%^&*()_-+={[}]|:;\"'<,>.?/";
+let symbols = "~`!@#$%^&*()_-+={[}]|:;\"',.?/";
+var avaliableChars = "";
+var password = "";
 
 console.log("lower: " + lowercaseLetters.length);
 console.log("upper: " + uppercaseLetters.length);
@@ -18,15 +17,36 @@ console.log("numbers: " + numbers.length);
 console.log("symbols: " + symbols.length);
 
 let generatePassword = () => {
-  let password = "";
+  avaliableChars = "";
 
-  for (let i = 0; i < document.getElementById("lengthSlider").value; i++) {
-    password = password + lowercaseLetters.charAt(Math.floor(Math.random() * 27));
+  if (document.getElementById("uppercaseBox").checked) {
+    avaliableChars += uppercaseLetters;
   }
 
-  return password;
+  if (document.getElementById("lowercaseBox").checked) {
+    avaliableChars += lowercaseLetters;
+  }
+
+  if (document.getElementById("numbersBox").checked) {
+    avaliableChars += numbers;
+  }
+
+  if (document.getElementById("symbolsBox").checked) {
+    avaliableChars += symbols;
+  }
+
+  console.log(avaliableChars.charAt(avaliableChars.length - 1));
+
+  password = "";
+
+  for (let i = 0; i < document.getElementById("lengthSlider").value; i++) {
+    password = password + avaliableChars.charAt(Math.floor(Math.random() * avaliableChars.length));
+  }
+
+  console.log(password);
 };
 
 document.getElementById("passwordGenerateButton").addEventListener("click", function () {
-  document.getElementById("passwordText").innerHTML = generatePassword();
+  generatePassword();
+  document.getElementById("passwordText").innerHTML = password;
 });
