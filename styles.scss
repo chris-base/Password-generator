@@ -154,9 +154,15 @@ body {
 
 #strengthScaleContainer {
   display: flex;
+  align-items: center;
 }
 
 #strengthText {
+  text-transform: uppercase;
+  margin: 0 10px 0 0;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
 }
 
 #strengthNodesContainer {

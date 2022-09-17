@@ -179,6 +179,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#strengthText {
+  text-transform: uppercase;
+  margin: 0 10px 0 0;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
 }
 
 #strengthNodesContainer {

@@ -23,16 +23,16 @@ let generateStrength = () => {
 
   if (strengthScore <= 2) {
     // WEAK
-    console.log("WEAK");
+    document.getElementById("strengthText").innerHTML = "WEAK";
   } else if (strengthScore <= 4) {
     // MEDIUM
-    console.log("MEDIUM");
+    document.getElementById("strengthText").innerHTML = "MEDIUM";
   } else if (strengthScore <= 6) {
     // STRONG
-    console.log("STRONG");
+    document.getElementById("strengthText").innerHTML = "STRONG";
   } else if (strengthScore == 7) {
     // VERY STRONG
-    console.log("VERY STRONG");
+    document.getElementById("strengthText").innerHTML = "VERY STRONG";
   }
 
   console.log("strength score: " + strengthScore);
