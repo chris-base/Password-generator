@@ -21,18 +21,62 @@ let generateStrength = () => {
     strengthScore += 3;
   }
 
-  if (strengthScore <= 2) {
+  document.getElementById("strengthText").innerHTML = "";
+
+  document.getElementById("sn1").style.backgroundColor = "transparent";
+  document.getElementById("sn1").style.borderColor = "#38ff42";
+
+  document.getElementById("sn2").style.backgroundColor = "#38ff42";
+  document.getElementById("sn2").style.borderColor = "#38ff42";
+
+  document.getElementById("sn3").style.backgroundColor = "#38ff42";
+  document.getElementById("sn3").style.borderColor = "#38ff42";
+
+  document.getElementById("sn4").style.backgroundColor = "#transparent";
+  document.getElementById("sn4").style.borderColor = "#38ff42";
+
+  if (strengthScore <= 2 && strengthScore !== 0) {
     // WEAK
     document.getElementById("strengthText").innerHTML = "WEAK";
+
+    document.getElementById("sn1").style.backgroundColor = "#fa4a2a";
+    document.getElementById("sn1").style.borderColor = "#fa4a2a";
   } else if (strengthScore <= 4) {
     // MEDIUM
     document.getElementById("strengthText").innerHTML = "MEDIUM";
+
+    document.getElementById("sn1").style.backgroundColor = "#fa922a";
+    document.getElementById("sn1").style.borderColor = "#fa922a";
+
+    document.getElementById("sn2").style.backgroundColor = "#fa922a";
+    document.getElementById("sn2").style.borderColor = "#fa922a";
   } else if (strengthScore <= 6) {
     // STRONG
     document.getElementById("strengthText").innerHTML = "STRONG";
+
+    document.getElementById("sn1").style.backgroundColor = "#a5ff5c";
+    document.getElementById("sn1").style.borderColor = "#a5ff5c";
+
+    document.getElementById("sn2").style.backgroundColor = "#a5ff5c";
+    document.getElementById("sn2").style.borderColor = "#a5ff5c";
+
+    document.getElementById("sn3").style.backgroundColor = "#a5ff5c";
+    document.getElementById("sn3").style.borderColor = "#a5ff5c";
   } else if (strengthScore == 7) {
     // VERY STRONG
     document.getElementById("strengthText").innerHTML = "VERY STRONG";
+
+    document.getElementById("sn1").style.backgroundColor = "#38ff42";
+    document.getElementById("sn1").style.borderColor = "#38ff42";
+
+    document.getElementById("sn2").style.backgroundColor = "#38ff42";
+    document.getElementById("sn2").style.borderColor = "#38ff42";
+
+    document.getElementById("sn3").style.backgroundColor = "#38ff42";
+    document.getElementById("sn3").style.borderColor = "#38ff42";
+
+    document.getElementById("sn4").style.backgroundColor = "#38ff42";
+    document.getElementById("sn4").style.borderColor = "#38ff42";
   }
 
   console.log("strength score: " + strengthScore);
