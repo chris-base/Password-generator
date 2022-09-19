@@ -12,6 +12,22 @@ var avaliableChars = "";
 var password = "";
 var strengthScore = 0;
 
+let resetStrengthNodes = () => {
+  document.getElementById("strengthText").innerHTML = "";
+
+  document.getElementById("sn1").style.backgroundColor = "transparent";
+  document.getElementById("sn1").style.borderColor = "#fff";
+
+  document.getElementById("sn2").style.backgroundColor = "transparent";
+  document.getElementById("sn2").style.borderColor = "#fff";
+
+  document.getElementById("sn3").style.backgroundColor = "transparent";
+  document.getElementById("sn3").style.borderColor = "#fff";
+
+  document.getElementById("sn4").style.backgroundColor = "transparent";
+  document.getElementById("sn4").style.borderColor = "#fff";
+};
+
 let generateStrength = () => {
   if (document.getElementById("lengthSlider").value < 10) {
     strengthScore += 1;
@@ -21,21 +37,7 @@ let generateStrength = () => {
     strengthScore += 3;
   }
 
-  document.getElementById("strengthText").innerHTML = "";
-
-  document.getElementById("sn1").style.backgroundColor = "transparent";
-  document.getElementById("sn1").style.borderColor = "#38ff42";
-
-  document.getElementById("sn2").style.backgroundColor = "#38ff42";
-  document.getElementById("sn2").style.borderColor = "#38ff42";
-
-  document.getElementById("sn3").style.backgroundColor = "#38ff42";
-  document.getElementById("sn3").style.borderColor = "#38ff42";
-
-  document.getElementById("sn4").style.backgroundColor = "#transparent";
-  document.getElementById("sn4").style.borderColor = "#38ff42";
-
-  if (strengthScore <= 2 && strengthScore !== 0) {
+  if (strengthScore <= 2) {
     // WEAK
     document.getElementById("strengthText").innerHTML = "WEAK";
 
@@ -112,6 +114,7 @@ let generatePassword = () => {
     password = password + avaliableChars.charAt(Math.floor(Math.random() * avaliableChars.length));
   }
 
+  resetStrengthNodes();
   generateStrength();
 };
 
