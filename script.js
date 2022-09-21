@@ -118,14 +118,17 @@ let generatePassword = () => {
   generateStrength();
 };
 
+let copyPassword = () => {
+  navigator.clipboard.writeText(document.getElementById("passwordText").textContent);
+};
+
 document.getElementById("passwordGenerateButton").addEventListener("click", function () {
   generatePassword();
   document.getElementById("passwordText").innerHTML = password;
 });
 
 document.getElementById("passwordCopyImg").addEventListener("click", function () {
-  // copyFunc()
-  console.log("click");
+  copyPassword();
   document.getElementById("passwordCopyImg").style.backgroundImage = "url(./public/doneImg.svg)";
   document.getElementById("passwordCopyImg").style.filter = "invert(100%) sepia(0%) saturate(7500%) hue-rotate(39deg) brightness(103%) contrast(99%)";
 
