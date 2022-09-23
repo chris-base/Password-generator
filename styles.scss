@@ -213,3 +213,17 @@ body {
   background-position: center;
   background-image: url("public/arrowImg.svg");
 }
+
+@media (max-width: 600px) {
+  #appContainer {
+    width: 95%;
+  }
+
+  #headerText {
+    font-size: 25px;
+  }
+
+  #passwordText {
+    font-size: 30px;
+  }
+}

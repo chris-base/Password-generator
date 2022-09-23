@@ -203,6 +203,7 @@ body {
 
 .strengthNode {
   border: 3px solid white;
+  background-color: transparent;
   width: 7px;
   height: 35px;
   margin: 0 7px;
@@ -247,5 +248,17 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("public/arrowImg.svg");
+}
+
+@media (max-width: 600px) {
+  #appContainer {
+    width: 95%;
+  }
+  #headerText {
+    font-size: 25px;
+  }
+  #passwordText {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
