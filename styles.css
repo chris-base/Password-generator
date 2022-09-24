@@ -260,5 +260,15 @@ body {
   #passwordText {
     font-size: 30px;
   }
+  #passwordLengthTitleText {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  #passwordLengthText {
+    font-size: 35px;
+  }
+  #lengthSlider {
+    margin: 20px 0 10px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
