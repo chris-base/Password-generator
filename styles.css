@@ -294,5 +294,11 @@ body {
     margin-right: 5px;
     text-align: right;
   }
+  #passwordGenerateButton {
+    margin: 20px 0 7px 0;
+  }
+  #generateButtonText {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
