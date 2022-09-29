@@ -8,6 +8,6 @@ This is a solution to the [Password generator challenge on Frontend Mentor](http
 
 ## Links
 
-Live Site - [Live Site]()
+Live Site - [Live Site](https://chris-base.github.io/Password-generator/)
 
-GitHub - [Chris base]()
+GitHub - [Chris base](https://github.com/chris-base)
